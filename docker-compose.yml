@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  transmission:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - "docker-registry-volume:/var/lib/docker-registry"
+      - "/secrets/root.crt:/etc/docker-registry/registry.crt"
+      - "/secrets/root.key:/etc/docker-registry/registry.key"
+    restart: always
+
+volumes:
+  docker-registry-volume:
