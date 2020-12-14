@@ -1,6 +1,6 @@
 version: "3.3"
 services:
-  transmission:
+  docker-registry:
     build: .
     ports:
       - "5000:5000"
