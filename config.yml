@@ -12,7 +12,7 @@ storage:
 auth:
   htpasswd:
     realm: basic-realm
-    path: /etc/docker/registry/shadow
+    path: /etc/docker-registry/shadow
 http:
   addr: 0.0.0.0:5000
   headers:
