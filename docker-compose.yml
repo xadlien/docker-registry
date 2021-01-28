@@ -6,9 +6,16 @@ services:
       - "5000:5000"
     volumes:
       - "docker-registry-volume:/var/lib/docker-registry"
-      - "/secrets/root.crt:/etc/docker-registry/registry.crt"
-      - "/secrets/root.key:/etc/docker-registry/registry.key"
     restart: always
+    secrets:
+      - ssl_crt
+      - ssl_key
+
+secrets:
+  ssl_crt:
+    file: secret.crt
+  ssl_key:
+    file: secret.key
 
 volumes:
   docker-registry-volume:
