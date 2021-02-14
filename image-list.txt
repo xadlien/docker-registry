@@ -18,3 +18,4 @@ pypiserver/pypiserver:v1.4.2
 linuxserver/bookstack:version-v0.30.4
 linuxserver/code-server:version-v3.7.2
 prom/prometheus:v2.23.0
+vault:1.6.1
