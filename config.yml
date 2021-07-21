@@ -18,8 +18,8 @@ http:
   headers:
     X-Content-Type-Options: [nosniff]
   tls:
-    certificate: /run/secrets/ssl_crt
-    key: /run/secrets/ssl_key
+    certificate: /etc/docker/ssl_crt
+    key: /etc/docker/ssl_key
 health:
   storagedriver:
     enabled: true
