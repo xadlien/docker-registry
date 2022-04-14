@@ -1,13 +1,7 @@
-alpine:3.9.5
-couchbase:6.5.0
-docker.elastic.co/kibana/kibana:7.10.1
-docker.elastic.co/elasticsearch/elasticsearch:7.10.1
-docker.elastic.co/beats/filebeat:7.10.1
-docker.elastic.co/beats/heartbeat:7.10.1
-docker pull docker.elastic.co/beats/metricbeat:7.10.1
+library/alpine:3.9.5
 pihole/pihole:4.3.2-1
-postgres:12
-registry:2.7
+library/postgres:12
+library/registry:2.7
 gogs/gogs:latest
 gitea/gitea:1.12.4
 linuxserver/mariadb:amd64-110.4.17mariabionic-ls1
@@ -16,4 +10,4 @@ pypiserver/pypiserver:v1.4.2
 linuxserver/bookstack:version-v0.30.4
 linuxserver/code-server:version-v3.7.2
 prom/prometheus:v2.23.0
-vault:1.6.1
+library/vault:1.6.1

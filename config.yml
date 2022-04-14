@@ -9,10 +9,8 @@ storage:
     rootdirectory: /var/lib/docker-registry
   delete:
     enabled: true
-auth:
-  htpasswd:
-    realm: basic-realm
-    path: /etc/docker-registry/shadow
+proxy:
+  remoteurl: https://registry-1.docker.io
 http:
   addr: 0.0.0.0:5000
   headers:

@@ -6,8 +6,6 @@ services:
       - "5000:5000"
     volumes:
       - "docker-registry-volume:/var/lib/docker-registry"
-      - "./secret.crt:/etc/docker/ssl_crt"
-      - "./secret.key:/etc/docker/ssl_key"
     restart: always
 
 volumes:
